@@ -10,7 +10,6 @@ import Schema, { State } from './state'
 import {StateGraph,START,END} from '@langchain/langgraph'
 import type { BaseMessageLike } from "@langchain/core/messages";
 
-
 // 创建一个节点
 const llmNode = async(state:State):Promise<State> => {
     const messages = state.messages as BaseMessageLike[]
